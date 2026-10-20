@@ -1,0 +1,56 @@
+[
+    {
+        "firstName": "Danking",
+        "lastName": "Lv",
+        "email": "middlezywookiller@major.com",
+        "dateOfBirth": "1999-09-15",
+        "address": {
+            "street": "325 fandouhuayuan",
+            "city": "Whanganui",
+            "state": "Manawatu",
+            "zipCode": "1106"
+        },
+        "preferences": {
+            "theme": "dark",
+            "language": "Chinese",
+            "notifications": true,
+            "subscription": true
+        }
+    },
+    {
+        "firstName": "Jiqi",
+        "lastName": "Wan",
+        "email": "bob.johnson@example.com",
+        "dateOfBirth": "1987-07-22",
+        "address": {
+            "street": "22 River Road",
+            "city": "Whanganui",
+            "state": "Manawatu",
+            "zipCode": "6657"
+        },
+        "preferences": {
+            "theme": "light",
+            "language": "English",
+            "notifications": false,
+            "subscription": false
+        }
+    },
+    {
+        "firstName": "Chloe",
+        "lastName": "Davis",
+        "email": "chloe.davis@example.com",
+        "dateOfBirth": "2000-04-10",
+        "address": {
+            "street": "33 Mountain Avenue",
+            "city": "Palmerston North",
+            "state": "Manawatu",
+            "zipCode": "4412"
+        },
+        "preferences": {
+            "theme": "dark",
+            "language": "English",
+            "notifications": true,
+            "subscription": false
+        }
+    }
+]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Catalogue(XML)</title>
+</head>
+<body>
+    <h1>Book Catalogue</h1>
+    <div id="bookOutput"></div>
+
+    <script>
+        fetch('book.xml')
+        .then(response => response.text())
+        .then(xmlText => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText,'text/xml');
+
+            const bookNodes = xmlDoc.querySelectorAll("book");
+            const outputDiv = document.getElementById("bookOutput");
+
+            bookNodes.forEach(book =>{
+                const title = book.querySelector("title").textContent;
+                const author = book.querySelector("author").textContent;
+                const price = book.querySelector("price").textContent;
+
+                let item = document.createElement("p");
+                item.textContent = `Title: ${title} | Author: ${author} | Price: $${price}`;
+                outputDiv.appendChild(item);
+            })
+        })
+    </script>
+</body>
+</html>
